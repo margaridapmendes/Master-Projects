@@ -1,2 +1,2 @@
 # Master in Business Analytics and Big Data Projects
-Here you will find the projects develop for some courses, included in my master's degree framework. 
+Here you will find the projects develop for some of the courses included in my Big Data master's degree. 
