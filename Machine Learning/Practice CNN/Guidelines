@@ -1,0 +1,53 @@
+                                      PRACTICE: CONVOLUTIONAL NEURAL NETS
+
+
+A. GOALS
+
+This practice session pursues the following objectives:
+- To be familiar with convolutional neural nets as a powerful supervised machine learning classification technique.
+- To be familiar with TensorFlow & Keras as frameworks to develop deep neural networks.
+- Understand how to regularize a neural net.
+- Use Transfer Learning to improve the accuracy of your net.
+
+
+-------
+
+
+1. CATS & DOGS
+
+We will start by following the notebook. 01_cnn_template.ipynb, where our goal will be to build a neural net for classifying cats and dogs images.
+
+2. REGULARIZATION
+
+We are at 72% of validation accuracy, while at a 100% percent in training accuracy. Clearly, we are in an overfitting scenario. Too many free params (~10M!) for just a few samples (2000)
+In the next notebook 02_cnn_template.ipynb, we are trying to cope with this, by using several regularization techniques.
+
+3. STAND ON THE SHOULDERS OF GIANTS [4 pts]
+
+We did it very well, but could we do it better?
+The answer is yes. How? By using a pre-trained net. In this case we will use Inception V3
+For that we will use the notebook 03_cnn.ipynb and 04_cnn_template.ipynb
+
+4. Object Detection. YOLO nets
+
+So far, we have been working on classification. A more complex task consists of locating & classifying different objects in a single image.
+This problem needs powerful nets (more complex topologies) and some clever decisions.
+In 2015, some smart guys published this paper https://arxiv.org/abs/1506.02640, where they presented a new approach for object detection based on a convolutional neural net topology.
+Those nets, under the family name of YOLO (you only look once) – as they just need to see the image once to perform both location and classification -- has been evolving from its first version year after year.
+YOLO is now in its version 5.
+
+https://medium.com/towards-artificial-intelligence/yolo-v5-is-here-custom-object-detection- tutorial-with-yolo-v5-12666ee1774e
+
+Out there, there are different implementations of those YOLO topologies, most of them written in PyTorch.
+
+Note 1. Note you need training images correctly labelled with the info of the location and objects in the images. Labelling a dataset is a time-consuming task so I recommend you use some datasets publicly available. In the tutorials below, people are using some datasets for Kaggle or Roboflow – if you use them is more than OK.
+
+A tutorial of using yolo v5 to locate some cells in blood images.
+
+https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/
+
+https://colab.research.google.com/drive/1gDZ2xcTOgR39tGGs-EZ6i3RTs16wmzZQ
+
+Yet another tutorial. This is interesting, cause it’s a guy using Google Colab and doing what you should doJ! Also you can see how to apply YOLO on videos (much more fun than images), and there are some links to pre-trained models.
+
+https://www.youtube.com/watch?v=nBjod252PoY&feature=emb_logo https://www.youtube.com/watch?v=bvzanMwlBaY
